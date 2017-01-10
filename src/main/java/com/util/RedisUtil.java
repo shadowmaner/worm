@@ -29,9 +29,9 @@ public class RedisUtil {
 			JedisPoolConfig config = new JedisPoolConfig();
 			config.setMaxTotal(100);
 			config.setMaxIdle(5);
-			config.setMaxWaitMillis(1000);
-			config.setTestOnBorrow(true);
-			config.setTestOnReturn(true);
+//			config.setMaxWaitMillis(1000);
+//			config.setTestOnBorrow(true);
+//			config.setTestOnReturn(true);
 			pool = new JedisPool(config,host,port,6666);
 		}
 		return pool;

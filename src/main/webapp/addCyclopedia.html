@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="renderer" content="webkit">
-	<title></title>
-	<link rel="stylesheet" href="assets/css/pintuer.css">
-	<link rel="stylesheet" href="assets/css/admin.css">
-	
-	<script src="assets/js/config.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="assets/css/pintuer.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+
+<script src="assets/js/config.js"></script>
 </head>
 <body>
-<div class="panel admin-panel margin-top" id="add">
-  <div class="panel-head"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
-  <div class="body-content">
-    <form name="form1" class="form-x" action="">
-     <div class="form-group">
-        <div class="label">
-          <label>缩略图片：</label>
-        </div>
-        <div id="container" class="field">
-          <input type="text" id="icon" name="icon" class="input tips" style="width:25%; float:left;"/>
-          <input id="pickfiles"  type="file" class="button bg-blue margin-left"  style="float:left; width:100px;">
-          <button  id="filedbutton" >浏览上传</button>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>文章图片：</label>
-        </div>
-        <div id="container2" class="field">
-          <input type="text" id="cover" name="cover" class="input tips" style="width:25%; float:left;"/>
-          <input id="pickfiles2"  type="file" class="button bg-blue margin-left"  style="float:left; width:100px;">
-          <button  id="filedbutton" >浏览上传</button>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>标题：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" value="" name="title"  />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>描述：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="content" style=" height:90px; width:450px"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label></label>
-        </div>
-        <div class="field">
-          <button class="button bg-main icon-check-square-o" id="addCyclopedia" >提交</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+	<div class="panel admin-panel margin-top" id="add">
+		<div class="panel-head">
+			<strong><span class="icon-pencil-square-o"></span>增加内容</strong>
+		</div>
+		<div class="body-content">
+			<form name="form1" class="form-x" action="">
+				<div class="form-group">
+					<div class="label">
+						<label>缩略图片：</label>
+					</div>
+					<div id="container" class="field">
+						<input type="text" id="icon" name="icon" class="input tips"
+							style="width: 25%; float: left;" /> <input id="pickfiles"
+							type="file" class="button bg-blue margin-left"
+							style="float: left; width: 100px;">
+						<button id="filedbutton">浏览上传</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>文章图片：</label>
+					</div>
+					<div id="container2" class="field">
+						<input type="text" id="cover" name="cover" class="input tips"
+							style="width: 25%; float: left;" /> <input id="pickfiles2"
+							type="file" class="button bg-blue margin-left"
+							style="float: left; width: 100px;">
+						<button id="filedbutton">浏览上传</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>标题：</label>
+					</div>
+					<div class="field">
+						<input type="text" class="input w50" value="" name="title" />
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>描述：</label>
+					</div>
+					<div class="field">
+						<textarea class="input" name="content"
+							style="height: 90px; width: 450px"></textarea>
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label></label>
+					</div>
+					<div class="field">
+						<button class="button bg-main icon-check-square-o"
+							id="addCyclopedia">提交</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
-<script type="text/javascript" src="assets/js/jquery/jquery-3.1.0.min.js" ></script>
-<script src="assets/js/pintuer.js"></script>
+	<script type="text/javascript"
+		src="assets/js/jquery/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/pintuer.js"></script>
 
-<!-- plupload -->
-<script src="assets/js/plupload/js/plupload.full.min.js"></script><!-- 产品环境 -->
+	<!-- plupload -->
+	<script src="assets/js/plupload/js/plupload.full.min.js"></script>
+	<!-- 产品环境 -->
 
-<!-- qiniu -->
-<script src="assets/js/qiniu/qiniu.js"></script><!-- 生产环境 -->
-<!-- <script src="assets/js/qiniu/qiniu.min.js"></script> --><!-- 生产环境 -->
+	<!-- qiniu -->
+	<script src="assets/js/qiniu/qiniu.js"></script>
+	<!-- 生产环境 -->
+	<!-- <script src="assets/js/qiniu/qiniu.min.js"></script> -->
+	<!-- 生产环境 -->
 
-<script>
+	<script>
 function getToken(){
 	var token = "";
 	$.ajax({

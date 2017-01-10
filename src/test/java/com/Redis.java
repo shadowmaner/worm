@@ -1,16 +1,15 @@
 package com;
 
-import redis.clients.jedis.Jedis;
+import com.util.RedisUtil;
 
 public class Redis {
 	
 	public static void main(String[] args) {
 		
-		@SuppressWarnings("resource")
-		Jedis jedis = new Jedis("127.0.0.1", 6379);
-		jedis.set("test", "fuck");
-		
-		System.out.println(jedis.get("test"));
+		for(int i = 0;i <= 100;i++){
+			RedisUtil.set("fuck", "fffff");
+			System.out.println(RedisUtil.get("fuck")+i+"次");
+		}
 		
 	}
 	

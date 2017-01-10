@@ -1,35 +1,41 @@
-body{
-    margin: 0 auto;
-    padding: 0 auto;
+body {
+	margin: 0 auto;
+	padding: 0 auto;
 }
-ul{
-    margin-top: 0;
+
+ul {
+	margin-top: 0;
 }
-li{
-    list-style-type: none;
+
+li {
+	list-style-type: none;
 }
-a,a:hover{
-    text-decoration: none;
+
+a, a:hover {
+	text-decoration: none;
 }
 /*閻庝絻澹堥崺鍛村冀閿燂拷*/
-#header{
-    height: 50px;
-    top: 0;
-    width: 100%;
-    background-color: #6fc8e6;
-   /*  background-image: url(../assets/images/doctor/bg.jpg); */
+#header {
+	height: 50px;
+	top: 0;
+	width: 100%;
+	background-color: #6fc8e6;
+	/*  background-image: url(../assets/images/doctor/bg.jpg); */
 }
-#header > a{
-    float: right;
-    margin-right: 22px;
-    margin-top: 14px;
-    color: white;
+
+#header>a {
+	float: right;
+	margin-right: 22px;
+	margin-top: 14px;
+	color: white;
 }
-.hosption-name{
+
+.hosption-name {
 	float: left;
 	margin-left: 15px;
 	color: white;
-	line-height:50px;
+	line-height: 50px;
+	font-weight: bold;
 }
 /* 鏂板鍐呭 */
 .leftnav {
@@ -101,161 +107,167 @@ a,a:hover{
 	margin-right: 8px;
 }
 
-.leftnav ul li a:hover,
-.leftnav ul li a.on {
+.leftnav ul li a:hover, .leftnav ul li a.on {
 	color: #09c;
 }
 
-
-
-
-
-
 /*濞撴皜鍡欑彾闁哄稄鎷�*/
-#sidebar{
-    background-color: #f4f4f4;
-    width: 200px;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 50px;
+#sidebar {
+	background-color: #f4f4f4;
+	width: 200px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 50px;
 }
 /*濞戞搩鍙冨Λ鍧楀礌閸濆嫮鍘�*/
-#content{
+#content {
 	background-color: #F0FFFF;
-    width: auto;
-    height: auto;
-    position: absolute;
-    right: 240px;
-    left:200px;
-    bottom: 0;
-    top: 50px;
+	width: auto;
+	height: auto;
+	position: absolute;
+	right: 240px;
+	left: 200px;
+	bottom: 0;
+	top: 50px;
 }
 /*闁告瑥鐤囩粩鐔煎礌閸濆嫮鍘�  */
-#right{
+#right {
 	background-color: #F4F4F4;
-    width: 240px;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    top: 50px;
+	width: 240px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 50px;
 }
-#right a{
+
+#right a {
 	top: 10px;
 	margin-left: 20px;
 	position: relative;
 }
 /*闁告牞宕甸弫鎾寸┍閳╁啩绱�*/
-.doctor{
+.doctor {
 	right: 0;
-    bottom: 0;
-    top: 50px;
+	bottom: 0;
+	top: 50px;
 	width: 240px;
 	height: auto;
 	position: absolute;
 	background-color: #F4F4F4;
 }
-.user{
+
+.user {
 	right: 0;
-    bottom: 0;
-    top: 240px;
+	bottom: 0;
+	top: 240px;
 	width: 240px;
 	height: auto;
 	overflow-y: scroll;
 	position: absolute;
 	background-color: #FaFaFa;
 }
-.title{
+
+.title {
 	right: 0;
-    bottom: 0;
-    top: 210px;
+	bottom: 0;
+	top: 210px;
 	width: 240px;
 	height: auto;
 	background-color: #FaFaFa;
 	position: absolute;
 }
-.title a{
+
+.title a {
 	line-height: 30px;
 	margin-left: 20px;
 }
 
 /*闁告牞宕甸弫鎾寸┍閳╁啩绱�*/
-.information{
+.information {
 	width: 240px;
 	height: 85px;
-	overflow:hidden;
-	display:inline-block
+	overflow: hidden;
+	display: inline-block
 }
 /*闁告牞宕甸弫鎾村緞閺夋垵鍓�*/
-.information img{
+.information img {
 	margin-top: 25px;
 	margin-left: 27px;
 	width: 50px;
 	height: 50px;
 	border-radius: 25px;
-	display:inline-block;
+	display: inline-block;
 }
-/*缂佸鍨甸濠氬矗婵犲偆娼ｉ柛姘iv*/	
-.section{
+/*缂佸鍨甸濠氬矗婵犲偆娼ｉ柛姘iv*/
+.section {
 	margin-right: 40px;
 	margin-top: 25px;
 	width: 120px;
-	height:50px;
+	height: 50px;
 	float: right;
 	position: relative;
-	}
-.section li{
+}
+
+.section li {
 	list-style-type: none;
 	padding-left: 2px;
 	padding-top: 8px;
 	line-height: 13px;
 	color: #a0a0a0;
 }
-.section span{
+
+.section span {
 	font-size: 14px;
 	color: #323232;
 	padding-left: 2px;
-    font-weight: bold;
+	font-weight: bold;
 }
 /*闂傚偆鍠涢惁鏍极娴兼潙娅ら柟瀛樺灩濞堟垿骞冮敐鍫嫹閸涱喖鐦柛娆欐嫹*/
-.label{
+.label {
 	padding-top: 2px;
 	width: 240px;
 	height: 64px;
 }
-.nquiry{
+
+.nquiry {
 	float: left;
 	width: 76px;
 	height: 52px;
 	/*background-color: #323232;*/
 }
-.regis{
+
+.regis {
 	float: left;
 	width: 76px;
 	height: 52px;
 	/*background-color:red;*/
 }
-.patient{
+
+.patient {
 	padding-top: 2px;
 	float: right;
 	width: 76px;
 	height: 52px;
 	/*background-color: #6FC8E6;*/
 }
-.label p{
+
+.label p {
 	text-align: center;
 	line-height: 10px;
 	color: #777777;
 }
-.nquiry{
+
+.nquiry {
 	border-right: 1px solid #E0E0E0;
-	padding:2px 1px 5px 1px;
+	padding: 2px 1px 5px 1px;
 }
-.regis{
+
+.regis {
 	border-right: 1px solid #E0E0E0;
-	padding:2px 1px 5px 1px;
+	padding: 2px 1px 5px 1px;
 }
 /*闁烩偓鍔嶉崺娑㈠礆濡ゅ嫨锟斤拷*/
 .user h3 {
@@ -275,114 +287,89 @@ a,a:hover{
 .user p {
 	line-height: 15px;
 	font-size: 10px;
-	white-space :nowrap;
-	text-overflow : ellipsis;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
+
 .user ul:hover {
 	background: #eee;
-	cursor:default;
+	cursor: default;
 }
+
 .user li:after {
 	content: '';
-	height:1px;
-	width:160px;
+	height: 1px;
+	width: 160px;
 	background-color: #A0A0A0;
 	position: absolute;
 }
-.user ul,li{
+
+.user ul, li {
 	margin: 0px;
 	padding: 10px 0px 7px 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#sideNav{
-    margin-bottom: 0;
-    padding-left: 0;
+#sideNav {
+	margin-bottom: 0;
+	padding-left: 0;
 }
-#sidebar #sideNav .menu{
-    /*text-align: center;*/
-    margin-bottom: 10px;
-}
-#sidebar #sideNav .menu > a{
-    /*margin-left: 16px;*/
-    color: #a0a0a0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    line-height: 14px;
-}
-#sidebar #sideNav .menu a > span{
-    display: inline-block;
-    width: 16px;
-}
-#sidebar #sideNav .menu-icon{
-    float: right;
-    width: 14px;
-    height: 14px;
-    margin-right: 14px;
-    background-image:url(../imgs/menu1-1.png);
 
+#sidebar #sideNav .menu {
+	/*text-align: center;*/
+	margin-bottom: 10px;
 }
-#sidebar #sideNav .menu-icon2{
- 	background-image: url(../imgs/menu1-2.png);
+
+#sidebar #sideNav .menu>a {
+	/*margin-left: 16px;*/
+	color: #a0a0a0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height: 14px;
 }
-#sidebar #sideNav .subMenu{
-    margin-top: 10px;
-    padding-left: 0;
-    display: none;
+
+#sidebar #sideNav .menu a>span {
+	display: inline-block;
+	width: 16px;
 }
-#sidebar #sideNav .subMenu > li{
-    /*margin-left: 24px;*/
+
+#sidebar #sideNav .menu-icon {
+	float: right;
+	width: 14px;
+	height: 14px;
+	margin-right: 14px;
+	background-image: url(../imgs/menu1-1.png);
 }
-#sidebar #sideNav .subMenu > li:hover{
-    background-color: #eeeeee;
+
+#sidebar #sideNav .menu-icon2 {
+	background-image: url(../imgs/menu1-2.png);
 }
-#sidebar #sideNav .subMenu a{
-    color: #777777;
-    height: 32px;
-    width: 100%;
-    display: block;
-    font-size: 12px;
-    line-height: 32px;
+
+#sidebar #sideNav .subMenu {
+	margin-top: 10px;
+	padding-left: 0;
+	display: none;
 }
-#sidebar #sideNav .subMenu a > span{
-    width: 24px;
+
+#sidebar #sideNav .subMenu>li {
+	/*margin-left: 24px;*/
+	
+}
+
+#sidebar #sideNav .subMenu>li:hover {
+	background-color: #eeeeee;
+}
+
+#sidebar #sideNav .subMenu a {
+	color: #777777;
+	height: 32px;
+	width: 100%;
+	display: block;
+	font-size: 12px;
+	line-height: 32px;
+}
+
+#sidebar #sideNav .subMenu a>span {
+	width: 24px;
 }

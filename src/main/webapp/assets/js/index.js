@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax({
-		url: 'http://localhost:8080/Test-backup/FindCylopediaList',  
+		url: serUrl+'FindCylopediaList',  
         type: 'post',  
         dataType: 'json',
         success:function(data){

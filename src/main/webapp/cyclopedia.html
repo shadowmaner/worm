@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="renderer" content="webkit">
-		<title></title>
-		<link rel="stylesheet" href="assets/css/pintuer.css">
-		<link rel="stylesheet" href="assets/css/admin.css">
-		<script type="text/javascript" src="assets/js/jquery/jquery-3.1.0.min.js" ></script>
-		
-		<script src="assets/js/config.js"></script>
-		<script src="assets/js/jquery.cookie.js"></script>
-		<script src="assets/js/pintuer.js"></script>
-		<script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="assets/css/pintuer.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script type="text/javascript"
+	src="assets/js/jquery/jquery-3.1.0.min.js"></script>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
+<script src="assets/js/pintuer.js"></script>
+<script>
 			$(document).ready(function() {
 				$.ajax({
 						url: serUrl+'FindCylopedia',
@@ -145,36 +147,41 @@
 				});    
 			}
 		</script>
-	</head>
+</head>
 
-	<body>
-		<div class="panel admin-panel">
-		  <div class="padding border-bottom">
-      		<ul class="search" style="padding-left:10px;">
-       			 <li> <a class="button border-main icon-plus-square-o" href="addCyclopedia.html"> 添加内容</a> </li>
-      		</ul>
-    	</div>
-			<table class="table table-hover text-center">
-				<tr>
-					 <th width="5%">ID</th>
-				      <th width="8%">缩略图</th>
-				      <th width="15%">文章图片</th>
-				      <th width="11%">标题</th>
-				      <th width="25%">描述</th>
-				      <th width="10%">时间</th>
-				      <th width="6%">收藏量</th>
-				      <th width="20%">操作</th>
-				</tr>
-				<tbody id="goods3">
-                
-                
-				</tbody>
-				<tr>
-					<td colspan="8">
-						<div class="pagelist"> <span id="first">第一页</span> <span id="pre" >上一页</span> <span id="next" >下一页</span> <span id="last">最后一页</span> 第<span id="spanPageNum"></span>页/共<span id="spanTotalPage"></span>页</div>
-					</td>
-				</tr>
-			</table>
+<body>
+	<div class="panel admin-panel">
+		<div class="padding border-bottom">
+			<ul class="search" style="padding-left: 10px;">
+				<li><a class="button border-main icon-plus-square-o"
+					href="addCyclopedia.html"> 添加内容</a></li>
+			</ul>
 		</div>
-	</body>
+		<table class="table table-hover text-center">
+			<tr>
+				<th width="5%">ID</th>
+				<th width="8%">缩略图</th>
+				<th width="15%">文章图片</th>
+				<th width="11%">标题</th>
+				<th width="25%">描述</th>
+				<th width="10%">时间</th>
+				<th width="6%">收藏量</th>
+				<th width="20%">操作</th>
+			</tr>
+			<tbody id="goods3">
+
+
+			</tbody>
+			<tr>
+				<td colspan="8">
+					<div class="pagelist">
+						<span id="first">第一页</span> <span id="pre">上一页</span> <span
+							id="next">下一页</span> <span id="last">最后一页</span> 第<span
+							id="spanPageNum"></span>页/共<span id="spanTotalPage"></span>页
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
 </html>

@@ -24,7 +24,7 @@ public class DBUtil {
 	public static int sum = 0;
 	
 	
-	public static final String url = "jdbc:mysql://127.0.0.1/angelchildrens?characterEncoding=utf8&useSSL=false";  
+	public static final String url = "jdbc:mysql://localhost/angelchildrens?characterEncoding=utf8&useSSL=false";  
     public static final String name = "com.mysql.jdbc.Driver";  
     public static final String username = "root";  
     public static final String password = "gofucking";

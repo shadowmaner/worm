@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="renderer" content="webkit">
-	<title></title>
-	<link rel="stylesheet" href="assets/css/pintuer.css">
-	<link rel="stylesheet" href="assets/css/admin.css">
-	<script type="text/javascript" src="assets/js/jquery/jquery-3.1.0.min.js" ></script>
-	
-	<script src="assets/js/config.js"></script>
-	<script src="assets/js/jquery/jquery.js"></script>
-	<script src="assets/js/pintuer.js"></script>
-	<script src="assets/js/jquery.cookie.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="assets/css/pintuer.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+<script type="text/javascript"
+	src="assets/js/jquery/jquery-3.1.0.min.js"></script>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/jquery/jquery.js"></script>
+<script src="assets/js/pintuer.js"></script>
+<script src="assets/js/jquery.cookie.js"></script>
 </head>
 <body>
-<form method="post" action="" id="listform">
-  <div class="panel admin-panel">
-    <div class="padding border-bottom">
-      <ul class="search" style="padding-left:10px;">
-        <li> <a class="button border-main icon-plus-square-o" href="addDisease.html"> 添加内容</a> </li>
-        <li style="float: right">
-          <input type="text" placeholder="请输入搜索关键字" name="keywords" id="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
-          <a href="javascript:void(0)" class="button border-main icon-search" id="seek" > 搜索</a></li>
-      </ul>
-    </div>
-    <table class="table table-hover text-center">
-      <tr>
-        <td width="4%">排序</td>
-        <td width="4%">疾病名</td>
-        <td width="16%">简介</td>
-        <td width="16%">症状</td>
-        <td width="16%">治疗</td>
-        <td width="16%">温馨提示</td>
-        <td width="5%">科室id</td>
-        <td width="5%">医生id</td>
-        <td width="10%">操作</td>
-      </tr>
-      <tbody  id="goods2">
-       
-      </tbody>
-      <tr>
-		<td colspan="8">
-			<div class="pagelist"> <span id="first">第一页</span> <span id="pre" >上一页</span> <span id="next" >下一页</span> <span id="last">最后一页</span> 第<span id="spanPageNum"></span>页/共<span id="spanTotalPage"></span>页</div>
-		</td>
-	 </tr>
-    </table>
-  </div>
-</form>
-<script type="text/javascript">
+	<form method="post" action="" id="listform">
+		<div class="panel admin-panel">
+			<div class="padding border-bottom">
+				<ul class="search" style="padding-left: 10px;">
+					<li><a class="button border-main icon-plus-square-o"
+						href="addDisease.html"> 添加内容</a></li>
+					<li style="float: right"><input type="text"
+						placeholder="请输入搜索关键字" name="keywords" id="keywords" class="input"
+						style="width: 250px; line-height: 17px; display: inline-block" />
+						<a href="javascript:void(0)"
+						class="button border-main icon-search" id="seek"> 搜索</a></li>
+				</ul>
+			</div>
+			<table class="table table-hover text-center">
+				<tr>
+					<td width="4%">排序</td>
+					<td width="4%">疾病名</td>
+					<td width="16%">简介</td>
+					<td width="16%">症状</td>
+					<td width="16%">治疗</td>
+					<td width="16%">温馨提示</td>
+					<td width="5%">科室id</td>
+					<td width="5%">医生id</td>
+					<td width="10%">操作</td>
+				</tr>
+				<tbody id="goods2">
+
+				</tbody>
+				<tr>
+					<td colspan="8">
+						<div class="pagelist">
+							<span id="first">第一页</span> <span id="pre">上一页</span> <span
+								id="next">下一页</span> <span id="last">最后一页</span> 第<span
+								id="spanPageNum"></span>页/共<span id="spanTotalPage"></span>页
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<script type="text/javascript">
 //获取疾病列表
 $(document).ready(function() {
 	$.ajax({

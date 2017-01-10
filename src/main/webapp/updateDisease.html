@@ -1,160 +1,173 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<meta name="renderer" content="webkit">
-	<title></title>
-	<link rel="stylesheet" href="assets/css/pintuer.css">
-	<link rel="stylesheet" href="assets/css/admin.css">
-	
-	<script src="assets/js/config.js"></script>
-	<script src="assets/js/jquery/jquery.js"></script>
-	<script src="assets/js/pintuer.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="assets/css/pintuer.css">
+<link rel="stylesheet" href="assets/css/admin.css">
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/jquery/jquery.js"></script>
+<script src="assets/js/pintuer.js"></script>
 <script>
 
 </script>
 </head>
 <body>
-<div class="panel admin-panel">
-  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
-  <div class="body-content">
-    <form name="from2" class="form-x" id="from-y" >  
-      <div class="form-group">
-        <div class="label">
-          <label>疾病名：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input w50" value="" name="title" />
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>妈妈头像：</label>
-        </div>
-        <div id="container" class="field">
-          <input type="text" id="icon" name="icon" class="input tips" style="width:25%; float:left;"/>
-          <input id="pickfiles"  type="file" class="button bg-blue margin-left"  style="float:left; width:100px;">
-          <button  id="filedbutton" >浏览上传</button>
-        </div>
-      </div>     
-       <div class="form-group">
-        <div class="label">
-          <label>医生头像：</label>
-        </div>
-         <div id="container2" class="field">
-          <input type="text" id="cover" name="cover" class="input tips" style="width:25%; float:left;"/>
-          <input id="pickfiles2"  type="file" class="button bg-blue margin-left"  style="float:left; width:100px;">
-          <button  id="filedbutton" >浏览上传</button>
-        </div>
-      </div> 
-        <div class="form-group">
-          <div class="label">
-            <label>分类科室：</label>
-          </div>
-          <div class="field">
-            <select name="section" class="input w50" id="sectiondoc">
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="label">
-            <label>分类医生：</label>
-          </div>
-          <div class="field">
-            <select name="doctor" class="input w50" id="remdoctor">
-            </select>
-          </div>
-        </div>
-      <div class="form-group">
-        <div class="label">
-          <label>简介：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="bio" style=" height:90px;"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>妈咪提问：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="userName"  />
-        </div>
-      </div>
-     
-      <div class="clear"></div>
-      <div class="form-group">
-        <div class="label">
-          <label>提问内容：</label>
-        </div>
-        <div class="field">
-          <textarea name="userPutQuestion" class="input" style="height:60px; border:1px solid #ddd;"></textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>医生回复：</label>
-        </div>
-        <div class="field">
-          <input type="text" class="input" name="doctorName"/>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>回复内容：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="doctorAnswerQuestion" style="height:80px;"></textarea>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>症状：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="sympton" style="height:80px;"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>治疗：</label>
-        </div>
-        <div class="field">
-          <textarea class="input" name="pathogen" style="height:80px;"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="label">
-          <label>温馨提示：</label>
-        </div>
-        <div class="field">
-         <textarea class="input" name="prompt" style="height:50px;"></textarea>
-          <div class="tips"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="field">
-          <button class="button bg-main icon-check-square-o" id="updateDisease"> 提交</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-<script type="text/javascript" src="assets/js/jquery/jquery-3.1.0.min.js" ></script>
-<script src="assets/js/pintuer.js"></script>
+	<div class="panel admin-panel">
+		<div class="panel-head" id="add">
+			<strong><span class="icon-pencil-square-o"></span>增加内容</strong>
+		</div>
+		<div class="body-content">
+			<form name="from2" class="form-x" id="from-y">
+				<div class="form-group">
+					<div class="label">
+						<label>疾病名：</label>
+					</div>
+					<div class="field">
+						<input type="text" class="input w50" value="" name="title" />
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>妈妈头像：</label>
+					</div>
+					<div id="container" class="field">
+						<input type="text" id="icon" name="icon" class="input tips"
+							style="width: 25%; float: left;" /> <input id="pickfiles"
+							type="file" class="button bg-blue margin-left"
+							style="float: left; width: 100px;">
+						<button id="filedbutton">浏览上传</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>医生头像：</label>
+					</div>
+					<div id="container2" class="field">
+						<input type="text" id="cover" name="cover" class="input tips"
+							style="width: 25%; float: left;" /> <input id="pickfiles2"
+							type="file" class="button bg-blue margin-left"
+							style="float: left; width: 100px;">
+						<button id="filedbutton">浏览上传</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>分类科室：</label>
+					</div>
+					<div class="field">
+						<select name="section" class="input w50" id="sectiondoc">
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>分类医生：</label>
+					</div>
+					<div class="field">
+						<select name="doctor" class="input w50" id="remdoctor">
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>简介：</label>
+					</div>
+					<div class="field">
+						<textarea class="input" name="bio" style="height: 90px;"></textarea>
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>妈咪提问：</label>
+					</div>
+					<div class="field">
+						<input type="text" class="input" name="userName" />
+					</div>
+				</div>
 
-<!-- plupload -->
-<script src="assets/js/plupload/js/plupload.full.min.js"></script><!-- 产品环境 -->
+				<div class="clear"></div>
+				<div class="form-group">
+					<div class="label">
+						<label>提问内容：</label>
+					</div>
+					<div class="field">
+						<textarea name="userPutQuestion" class="input"
+							style="height: 60px; border: 1px solid #ddd;"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>医生回复：</label>
+					</div>
+					<div class="field">
+						<input type="text" class="input" name="doctorName" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>回复内容：</label>
+					</div>
+					<div class="field">
+						<textarea class="input" name="doctorAnswerQuestion"
+							style="height: 80px;"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>症状：</label>
+					</div>
+					<div class="field">
+						<textarea class="input" name="sympton" style="height: 80px;"></textarea>
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>治疗：</label>
+					</div>
+					<div class="field">
+						<textarea class="input" name="pathogen" style="height: 80px;"></textarea>
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="label">
+						<label>温馨提示：</label>
+					</div>
+					<div class="field">
+						<textarea class="input" name="prompt" style="height: 50px;"></textarea>
+						<div class="tips"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="field">
+						<button class="button bg-main icon-check-square-o"
+							id="updateDisease">提交</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript"
+		src="assets/js/jquery/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/pintuer.js"></script>
 
-<!-- qiniu -->
-<script src="assets/js/qiniu/qiniu.js"></script><!-- 生产环境 -->
-<script>
+	<!-- plupload -->
+	<script src="assets/js/plupload/js/plupload.full.min.js"></script>
+	<!-- 产品环境 -->
+
+	<!-- qiniu -->
+	<script src="assets/js/qiniu/qiniu.js"></script>
+	<!-- 生产环境 -->
+	<script>
 $(document).ready(function(){
 	$.ajax({
 		url:serUrl+'FindSectionList',
@@ -346,6 +359,6 @@ var token = getToken();
 	});
 });
 </script>
-<script src="assets/js/jquery.cookie.js"></script>
+	<script src="assets/js/jquery.cookie.js"></script>
 </body>
 </html>

@@ -1,15 +1,15 @@
 /*閼卞﹤銇夌粣妤�褰涢弽宄扮础*/
-.chat{
-	display:none;
+.chat {
+	display: none;
 	width: 500px;
 	height: 450px;
-	left:400px;
+	left: 400px;
 	top: 200px;
-    margin: 0 auto;
+	margin: 0 auto;
 	box-shadow: 10px 10px 55px #777;
 	border-radius: 3px;
 	background-color: #F0FFFF;
-	z-index: 900;	
+	z-index: 900;
 	position: absolute;
 }
 /*閻€劍鍩涢崥锟�*/
@@ -20,17 +20,16 @@
 	line-height: 25px;
 	font-size: 13px;
 	padding: 0 10px;
-	overflow:hidden;
-	border-radius: 3px;	
+	overflow: hidden;
+	border-radius: 3px;
 	cursor: move;
-	
 }
 /*閻€劍鍩涢崥宥勮厬閸忔娊妫撮幐澶愭尦閺嶅洨顒�*/
-.name a{
-	cursor:default;
+.name a {
+	cursor: default;
 }
 /*娴兼俺鐦介崠锟�*/
-.chatContent{
+.chatContent {
 	height: 300px;
 	width: 499px;
 	border: 1px solid silver;
@@ -38,46 +37,50 @@
 	background-color: #FFFFFF;
 }
 /*鏉堟挸鍙嗗锟�*/
-#sendMsg{
-	width:496px;
-	height:100px;
+#sendMsg {
+	width: 496px;
+	height: 100px;
 	background: #fff;
 	position: absolute;
 	resize: none;
-	outline:none;
-	border-radius: 3px;	
-	border: none;/*閸樺娅庢妯款吇鏉堣顢�*/
+	outline: none;
+	border-radius: 3px;
+	border: none; /*閸樺娅庢妯款吇鏉堣顢�*/
 }
 /*閸欐垿锟戒焦瀵滈柦锟�*/
-#send{
+#send {
 	width: 50px;
 	height: 25px;
 	margin-left: 440px;
-	margin-top:78px;
+	margin-top: 78px;
 	line-height: 25px;
 	border-radius: 6px;
-	background-color:#6fc8e6;
-	border-left: 0px;/*閸樻槒绔熷锟�*/
+	background-color: #6fc8e6;
+	border-left: 0px; /*閸樻槒绔熷锟�*/
 	border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
-}	
-.username{
-	float:left;
-    line-height: 28px;
 }
-.name img{
+
+.username {
+	float: left;
+	line-height: 28px;
+}
+
+.name img {
 	margin-top: 8px;
 }
-.ema{
+
+.ema {
 	left: 5px;
 	position: absolute;
 }
-.username{
+
+.username {
 	margin-top: 2px;
 	margin-left: 14px;
 	position: relative;
-	}
+}
 /*閼卞﹤銇夐崘鍛啇閺嶅嘲绱� */
 .chatter_msg_item {
 	position: relative;
@@ -134,7 +137,7 @@
 /* 閸栬崵鏁撴导姘崇樈閸愬懎顔恉iv */
 .chatter_msg_item.chatter_msg_item_user:before {
 	content: '';
-	position:absolute;
+	position: absolute;
 	top: 15px;
 	right: -12px;
 	z-index: 10;
@@ -142,28 +145,7 @@
 	border-left-color: #b2e281;
 }
 /*閹恒儲鏁归惃鍓噓pia閺嶅嘲绱�  */
-#talkImg{
+#talkImg {
 	width: 150px;
 	height: 150px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

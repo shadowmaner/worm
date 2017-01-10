@@ -1,11 +1,9 @@
-/*闂佺顑冮崕閬嶅箖瀹ュ洦濯奸柡澶庢硶缁夛拷*/
+/*健康记录*/
 #wwwzzjsnet_zzjs_1 {
 	position: absolute;
-	margin-top: 20px;
 	width: auto;
 	height: auto;
-	margin-left: 35px;
-	margin-right: 35px;
+	margin-right: 20px;
 }
 
 #wwwzzjsnet_zzjs_1 img {
@@ -23,54 +21,41 @@
 
 #wwwzzjsnet_zzjs_1 p {
 	text-indent: 1em;
-	line-height: 1px;
+	line-height: 15px;
 	font-size: 10px;
-}
-
-#wwwzzjsnet_zzjs_1 li {
-	padding: 2px;
-	position: relative;
-	white-space: nowrap;
-	/*閻庢鍠栭幖顐﹀春濡や胶鈻旂�广儱妫楁惔濠囨偠濞戣櫕瀚�*/
-	border-bottom: 1px #ccc deshed;
-	width: 20em;
-	/*婵炴垶鎸哥粔鎾储閹寸姵濯肩紒瀣仢濮ｅ鏌ｅ鍕凡鐎规洘鍔曟晥濠㈣泛锕﹂幗鐔兼煙閹碱厺绨奸柡宀嬫嫹*/
-	zoom: 1;
 }
 
 /*闂佹眹鍊曟晶钘夘潖閸撗傛勃闁哄洨濮版禒娑㈡煕閺嶅灚瀚�*/
 .illness {
-	line-height: 10px;
-	margin-left: 92px;
+	margin-left: 75px;
 	width: auto;
 	height: 60px;
 	background-color: #EEEEEE;
 }
 
-/*fkfdkljg */
 .neirong {
 	white-space: pre-wrap;
 	white-space: -moz-pre-wrap;
 	white-space: -pre-wrap;
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
-	line-height: 18px;
-	margin-left: 92px;
+	line-height: 25px;
+	margin-left: 75px;
 }
 
 .txt {
 	width: auto;
-	margin-left: 92px;
+	margin-left: 75px;
 	border: none;
 	/*闂佸憡锚椤嘲鈻嶆惔銏╂付婵☆垱顑欓崥鍥级閸綆娼愭い顫嫹*/
 	background-color: #E0E0E0;
-	position: absolute;
+	position: r;
 	resize: none;
 	outline: none;
 }
 
 #sub {
-	margin-top: 4%;
+	margin-top: 8%;
 	width: 78px;
 	height: 28px;
 	float: right;
@@ -93,7 +78,7 @@
 }
 
 #disease p {
-	line-height: 5px;
+	line-height: 6px;
 	color: chartreuse;
 }
 
@@ -112,10 +97,9 @@
 }
 
 .huifu p {
-	margin-left: 83px;
+	margin-left: 62px;
 }
 /* 閻€劍鍩涢幐鍌氬娇 */
-
 .reply {
 	width: 445px;
 	height: 160px;
@@ -150,7 +134,7 @@
 .index_tab td {
 	line-height: 30px;
 	border: 1px solid #e0e0e0;
-	padding-left: 4px;
+	padding-left: 40px;
 }
 
 tr.tr_top td {
@@ -164,8 +148,8 @@ tr.tr_top td {
 td.td_center {
 	text-align: center;
 }
+
 .add {
-            
 	position: absolute;
 }
 
@@ -178,6 +162,7 @@ td.td_center {
 	background-color: #ffffff;
 	border: 1px solid #CCCCCC;
 }
+
 .addimg {
 	width: 12px;
 	height: 12px;
@@ -185,6 +170,7 @@ td.td_center {
 	position: absolute;
 	top: 6px;
 }
+
 .renm {
 	display: none;
 	width: 80px;
