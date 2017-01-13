@@ -128,23 +128,6 @@
 		<br> <input type="button" id="send" value="发送" />
 	</div>
 
-
-	<script>
-
-	/* Ctrl+Enter发送消息*/
-	$("#sendMsg").keydown(function() {
-
-		if (event.ctrlKey && event.keyCode == 13) {//键盘事件
-
-			var msg = $("#sendMsg").val();//要发送的内容
-            
-			sendSingleMsg(msg);//发送消息
-
-			$("#sendMsg").val("");//发送完后清空文本框
-
-		}
-	});
-</script>
 	<!--聊天窗口移动-->
 	<script type="text/javascript" src="assets/js/doctor/move.js"></script>
 	<!--健康提醒  -->
@@ -153,8 +136,22 @@
 	<!--挂号 -->
 
 	<div class="admin">
-		<iframe scrolling="auto" rameborder="0" src="health-records.html"
-			name="right" width="100%" height="100%"></iframe>
+		<iframe src="health-records.html" name="right" width="100%" height="100%"></iframe>
 	</div>
 </body>
+<script>
+/* Ctrl+Enter发送消息*/
+$("#sendMsg").keydown(function() {
+
+	if (event.ctrlKey && event.keyCode == 13) {//键盘事件
+
+		var msg = $("#sendMsg").val();//要发送的内容
+           
+		sendSingleMsg(msg);//发送消息
+
+		$("#sendMsg").val("");//发送完后清空文本框
+
+	}
+});
+</script>
 </html>

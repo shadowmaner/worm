@@ -15,13 +15,13 @@ import redis.clients.jedis.JedisPoolConfig;
  * nice
  * 2016年12月22日
  */
-public class RedisUtil {
+public final class RedisUtil {
 	
 	private static JedisPool pool = null;
 
-	private static final String host = "127.0.0.1";
-	private static final int port = 6379;
-//	private static final String pass ="gofucking";
+	private static final String HOST = "127.0.0.1";
+	private static final int PORT = 6379;
+//	private static final String PASS ="gofucking";
 	
 	
 	public static JedisPool getPool(){
@@ -29,10 +29,10 @@ public class RedisUtil {
 			JedisPoolConfig config = new JedisPoolConfig();
 			config.setMaxTotal(100);
 			config.setMaxIdle(5);
-//			config.setMaxWaitMillis(1000);
-//			config.setTestOnBorrow(true);
-//			config.setTestOnReturn(true);
-			pool = new JedisPool(config,host,port,6666);
+			config.setMaxWaitMillis(1000);
+			config.setTestOnBorrow(true);
+			config.setTestOnReturn(true);
+			pool = new JedisPool(config,HOST,PORT,6666);
 		}
 		return pool;
 	}

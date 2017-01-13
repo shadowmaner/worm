@@ -1,32 +1,32 @@
 package com.admin.po;
 
-public class User {
+public final class User {
 	
-	private Integer id;//用户id
+	private Integer id;
 	
-	private String phone;//手机号
+	private String phone;
 	
-	private String name;//名称
+	private String name;
 	
-	private String password;//密码
+	private String password;
 
-	private String gender;//性别
+	private String gender;
 
-	private Integer age;//年龄
+	private Integer age;
 	
-	private String icon;//头像
+	private String icon;
 	
-	private String qq;//QQ号
+	private String qq;
 	
-	private String weibo;//微博
+	private String weibo;
 	
-	private String wechat;//微信
+	private String wechat;
 	
-	private String email;//邮箱
+	private String email;
 	
-	private Integer role;//角色id
+	private Integer role;
 	
-	private String registrationId;//极光设备注册id
+	private String registrationId;
 
 	public Integer getId() {
 		return id;
@@ -132,12 +132,6 @@ public class User {
 		this.registrationId = registrationId;
 	}
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", phone=" + phone + ", name=" + name + ", password=" + password + ", gender="
-				+ gender + ", age=" + age + ", icon=" + icon + ", qq=" + qq + ", weibo=" + weibo + ", wechat=" + wechat
-				+ ", email=" + email + ", role=" + role + ", registrationId=" + registrationId + "]";
-	}
-
+	
 	
 }
