@@ -17,28 +17,52 @@ import redis.clients.jedis.JedisPoolConfig;
  */
 public final class RedisUtil {
 	
-	private static JedisPool pool = null;
-
+	private static JedisPool pool;
+//	private static JedisPoolConfig config;
+	private static final int MAX_TOTAL = 100;
+	private static final int MAX_IDELE = 5;
+	private static final int MAX_WAIT_MILLIS = 1000;
+	
 	private static final String HOST = "127.0.0.1";
 	private static final int PORT = 6379;
+	private static final int MAX_TIMEOUT = 6666;
 //	private static final String PASS ="gofucking";
 	
-	
-	public static JedisPool getPool(){
-		if(pool == null){
+	public synchronized static JedisPool getPool(){
+		if(null == pool){
 			JedisPoolConfig config = new JedisPoolConfig();
-			config.setMaxTotal(100);
-			config.setMaxIdle(5);
-			config.setMaxWaitMillis(1000);
+			config.setMaxTotal(MAX_TOTAL);
+			config.setMaxIdle(MAX_IDELE);
+			config.setMaxWaitMillis(MAX_WAIT_MILLIS);
 			config.setTestOnBorrow(true);
 			config.setTestOnReturn(true);
-			pool = new JedisPool(config,HOST,PORT,6666);
+			pool = new JedisPool(config,HOST,PORT,MAX_TIMEOUT);
+		}else{
+			pool.close();
 		}
 		return pool;
 	}
 	
-	
-    public static String get(String key){
+    public synchronized static String set(final String key, final String value){
+        if(null != pool){
+        	Jedis jedis = null;
+        	try {
+                jedis = getPool().getResource();
+                jedis.set(key, value);
+            } catch (Exception e) {
+            	jedis.close();
+                e.printStackTrace();
+            } finally {
+                if(null != jedis) {
+                	jedis.close();
+                }
+            }
+        }
+		return value;
+        
+    }
+    
+    public synchronized static String get(final String key){
         Jedis jedis = null;
         String value = null;
         try {
@@ -49,29 +73,10 @@ public final class RedisUtil {
             e.printStackTrace();
         } finally {
             if(null != jedis) {
-            	jedis.close();        
+            	jedis.close();
             }
         }
         return value;
     }
-    
-    
-    public static String set(String key,String value){
-        Jedis jedis = null;
-        try {
-            jedis = getPool().getResource();
-            return jedis.set(key, value);
-        } catch (Exception e) {
-        	jedis.close();
-            e.printStackTrace();
-            return "exp";
-        } finally {
-            if(null != jedis) {
-            	jedis.close();        
-            }
-        }
-    }
-    
-    
     
 }
