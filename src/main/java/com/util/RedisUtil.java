@@ -18,7 +18,6 @@ import redis.clients.jedis.JedisPoolConfig;
 public final class RedisUtil {
 	
 	private static JedisPool pool;
-//	private static JedisPoolConfig config;
 	private static final int MAX_TOTAL = 100;
 	private static final int MAX_IDELE = 5;
 	private static final int MAX_WAIT_MILLIS = 1000;
@@ -37,8 +36,6 @@ public final class RedisUtil {
 			config.setTestOnBorrow(true);
 			config.setTestOnReturn(true);
 			pool = new JedisPool(config,HOST,PORT,MAX_TIMEOUT);
-		}else{
-			pool.close();
 		}
 		return pool;
 	}
@@ -50,7 +47,6 @@ public final class RedisUtil {
                 jedis = getPool().getResource();
                 jedis.set(key, value);
             } catch (Exception e) {
-            	jedis.close();
                 e.printStackTrace();
             } finally {
                 if(null != jedis) {
@@ -69,7 +65,6 @@ public final class RedisUtil {
             jedis = getPool().getResource();
             value = jedis.get(key);
         } catch (Exception e) {
-        	jedis.close();
             e.printStackTrace();
         } finally {
             if(null != jedis) {
